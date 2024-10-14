@@ -15,9 +15,12 @@ And one point representing the starting position of a thief, we need to calculat
 2. The **initial speed** of the thief is **100**.
 3. As the weight of the knapsack increases, the speed decreases according to the formula:
 
-   \[
-   \text{Speed Reduction} = \left(\frac{\text{Current Knapsack Weight} + \text{Current Node Weight}}{\text{Knapsack Capacity}}\right) \times 100
-   \]
+### Speed Reduction Formula
+
+\[
+\text{Speed Reduction} = \left( \frac{\text{Current Knapsack Weight} + \text{Current Node Weight}}{\text{Knapsack Capacity}} \right) \times 100
+\]
+
 
 ## Goal
 
