@@ -17,12 +17,7 @@ And one point representing the starting position of a thief, we need to calculat
 
 ### Speed Reduction Formula
 
-\[
-\text{Speed Reduction} = \left( \frac{\text{Current Knapsack Weight} + \text{Current Node Weight}}{\text{Knapsack Capacity}} \right) \times 100
-\]
-
-
-## Goal
+Speed Reduction=((Current Knapsack Weight + Current Node Weight) / Knapsack Capacity )  x 100
 
 Determine the **maximum profit** achievable given the constraints of the knapsack capacity and the impact of weight on speed.
 
