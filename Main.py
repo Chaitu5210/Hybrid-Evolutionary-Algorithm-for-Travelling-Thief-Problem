@@ -6,6 +6,10 @@ from Fitness_Function import Fitness
 # Initialize the dataset Path
 file_path = "Hybrid-Evolutionary-Algorithm-for-Travelling-Thief-Problem/Dataset/TTP_50_Cities_Dataset.txt"
 
+Knapsack_Weight = 290
+Speed = 100
+
+
 
 # initializing the genome
 def Genome(length):
@@ -16,7 +20,7 @@ def init_population(Population_Size: int, Genome_Length: int) -> list:
     return [Genome(Genome_Length) for _ in range(Population_Size)] 
 
 
-Knapsack_Weight = 80
+Knapsack_Weight = 110
 speed = 100
 
 if __name__=="__main__":
@@ -39,8 +43,18 @@ if __name__=="__main__":
 
     # taking the population
     Complete_Population = init_population(Population_Size, Genome_Length)
-    print(Complete_Population)
 
+
+    Fitness_Values=[Fitness(Cities_Data, individual , Knapsack_Weight, speed) for individual in Complete_Population]
+    
+    Fitness_Values = sorted(Fitness_Values, reverse=True)[:10]
+    print(Fitness_Values)
+
+
+
+
+# Crossover_Rate
+# Mutation_Rate
 
 
     
