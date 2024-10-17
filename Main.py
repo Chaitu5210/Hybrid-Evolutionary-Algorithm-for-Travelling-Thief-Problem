@@ -46,9 +46,9 @@ if __name__=="__main__":
 
 
     Fitness_Values=[Fitness(Cities_Data, individual , Knapsack_Weight, speed) for individual in Complete_Population]
-    
-    Fitness_Values = sorted(Fitness_Values, reverse=True)[:10]
+
     print(Fitness_Values)
+    
 
 
 
